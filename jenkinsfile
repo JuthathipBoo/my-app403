@@ -1,6 +1,7 @@
 pipeline{
     agent any
-    stage('Check out'){
+   stages{
+     stage('Check out'){
         steps{
             print"Check out"
             checkout([
@@ -14,4 +15,5 @@ pipeline{
             print"check out success"
         }
     }
+   }
 }
