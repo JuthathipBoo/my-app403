@@ -14,10 +14,4 @@ pipeline{
             print"check out success"
         }
     }
-    stage('Build'){
-        steps{
-            print"Hello world"
-        }
-    }
-    
 }
