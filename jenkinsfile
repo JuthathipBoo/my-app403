@@ -1,7 +1,28 @@
 pipeline{
     agent any
-    stage('Clone'){
-        steps{}
+    stage('Check out'){
+        steps{
+            print"Check out"
+            checkout([
+             $class: 'GitSCM',
+             branches: [[name: '*/master']],
+             userRemoteConfigs: [ [
+                    credentialsId: 'juthathip',
+                    url: 'https://github.com/JuthathipBoo/my-app403.git'
+                ] ]
+            ])
+            print"check out success"
+        }
     }
-
+    stage('Build'){
+        steps{
+            print"Hello world"
+        }
+    }
+    stage('Clone'){
+        steps{
+            print"Check out"
+        }
+    }
+    
 }
