@@ -19,5 +19,9 @@ pipeline{
             print"Hello world"
         }
     }
-    
+    stage('Build'){
+        steps{
+            print"Hello world"
+        }
+    }
 }
