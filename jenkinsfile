@@ -19,10 +19,5 @@ pipeline{
             print"Hello world"
         }
     }
-    stage('Clone'){
-        steps{
-            print"Check out"
-        }
-    }
     
 }
